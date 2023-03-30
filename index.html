@@ -212,7 +212,7 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          
+
         </div>
 
         <div class="row">
@@ -220,7 +220,8 @@
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Mishal MP</h4>
-              <p><em>I'm a web developer and designer with 7 months of experience.I'm using Python Django + React for the web development </em></p>
+              <p><em>I'm a web developer and designer with 7 months of experience.I'm using Python Django + React for
+                  the web development </em></p>
               <ul>
                 <li>kerala,India</li>
                 <li>+91 9061278198</li>
@@ -234,7 +235,8 @@
               <h4>Bachelor of Computer Application </h4>
               <h5>2019 - 2022</h5>
               <p><em>From Indus valley degree College</em></p>
-              <p>I have completed my bachelors in Bca from Bangalore.I was in the 2019-2022. I have done 2 collge projects myself,which was to blogging website and another was Online Examination project.</p>
+              <p>I have completed my bachelors in Bca from Bangalore.I was in the 2019-2022. I have done 2 collge
+                projects myself,which was to blogging website and another was Online Examination project.</p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -322,7 +324,8 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>These are the Services i'm providing ,Website development,website designing,Digital Marketing.And I have completed 4 works so far.</p>
+          <p>These are the Services i'm providing ,Website development,website designing,Digital Marketing.And I have
+            completed 4 works so far.</p>
         </div>
 
         <div class="row">
@@ -334,12 +337,14 @@
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bi bi-card-checklist"></i></div>
             <h4 class="title"><a href="">Website designing</a></h4>
-            <p class="description">I have done more than 6 projects so far,and all my customers completely satisfied with my creativity.</p>
+            <p class="description">I have done more than 6 projects so far,and all my customers completely satisfied
+              with my creativity.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bi bi-bar-chart"></i></div>
             <h4 class="title"><a href="">Digital Marketing</a></h4>
-            <p class="description"> I have done 2 Digital marketing projects so far,i'm creating the website for the client ,and marketing done by my friend,who is experienced in marketing.</p>
+            <p class="description"> I have done 2 Digital marketing projects so far,i'm creating the website for the
+              client ,and marketing done by my friend,who is experienced in marketing.</p>
           </div>
 
 
@@ -390,28 +395,36 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form id="submitform" class="gtform" action="">
+            <form action="" id="submitform" name="submitform" class="gtform">
               <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="fname">
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                  </div>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email">
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Your Email">
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject">
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="messages" rows="10"></textarea>
-              </div>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" rows="5"
+                      placeholder="Message"></textarea>
+                  </div>
+                </div>
 
-              <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="text-center">Send Message</button>
+                </div>
+              </div>
             </form>
+
           </div>
 
         </div>
@@ -428,18 +441,50 @@
       class="bi bi-arrow-up-short"></i></a>
 
 
+
+
+
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+
+
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
   <script>
     const form = document.getElementById("submitform");
-    const nameInput = document.getElementById("fname");
+    const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const subjectinput = document.getElementById("subject")
-    const messageInput = document.getElementById("messages");
+    const messageInput = document.getElementById("message");
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
 
       if (nameInput.value.trim() === "") {
         alert("Please enter your name.");
+        nameInput.focus();
+        return false;
+      }
+      else if (!isName(nameInput.value)) {
+        alert("Please enter valid name.");
         nameInput.focus();
         return false;
       }
@@ -471,16 +516,15 @@
         url: "https://script.google.com/macros/s/AKfycbyv_LNWT2urCagMIuiZHkG8Km-O345TosCW04d6NDxs-ajuic3sbdQ1aDfZCRQk3wkf/exec",
         method: "POST",
         data: {
-          fname: nameInput.value,
+          name: nameInput.value,
           email: emailInput.value,
           subject: subjectinput.value,
-          messages: messageInput.value
+          message: messageInput.value
         },
         success: function (response) {
           alert("Form submitted successfully");
           window.location.reload();
-
-
+ 
         },
         error: function (err) {
           alert("Something Error")
@@ -491,35 +535,15 @@
     function isEmail(email) {
       return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     }
+
+    function isName(name){
+      /^([^0-9]*)$/.test(name);
+    }
   </script>
-
-
-
-
-
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-
-
-
-
-
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-
 
 </body>
 
 </html>
+
+
+
